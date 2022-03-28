@@ -37,14 +37,10 @@ export default function Home() {
           <img src="/diseno-de-logo.png" alt="logo" />
           <span>VITR</span>
           <h2>Amantes del código</h2>
-          {user === null ?
           <Button onClick={onClickLoginButton}>
             <GitHub fill="white" width={24} height={24} />
             Login with GitHub
           </Button>
-          :
-          <img src={user.photo}/>
-          }
         </div>
       </AppLayout>
       <style jsx>

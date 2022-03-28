@@ -38,13 +38,12 @@ export default function Home() {
           <span>VITR</span>
           <h2>Amantes del código</h2>
           {user === null ?
+          <img src={user?.photo}/>
+          :
           <Button onClick={onClickLoginButton}>
             <GitHub fill="white" width={24} height={24} />
             Login with GitHub
-          </Button>
-          :
-          <img src={user.photo}/>
-          }
+          </Button>}
         </div>
       </AppLayout>
       <style jsx>
